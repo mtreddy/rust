@@ -17,10 +17,14 @@ fn egcd(ia:i32, ib:i32) ->(i32, i32){
         
         (last_x, last_y)
 }
+fn divmod(a:i32, den:i32, p:i32) {
+    let pair:(i32, i32) = egcd(den, p);
+    a * pair.0;
+}
 
 fn main() {
     println!("Hello, RNG!");
     let args: Vec<String> = env::args().collect();
     dbg!(args);
-    println!("coefs {:?}",egcd(240, 46));
+    println!("coefs {:?}",divmod(240, 46));
 }
