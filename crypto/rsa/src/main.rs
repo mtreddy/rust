@@ -1,6 +1,7 @@
 use rsa::{Pkcs1v15Encrypt, RsaPrivateKey, RsaPublicKey};
 use rand::Rng;
 use data_encoding::HEXUPPER;
+#[warn(unused_imports)]
 fn main() {
     let mut rng = rand::thread_rng();
     let bits = 2048;
@@ -12,5 +13,7 @@ fn main() {
     let enc_data = pb.encrypt(&mut rng, Pkcs1v15Encrypt, &data[..]).expect("Failed to encrypt");
     let dec_data = pr.decrypt(Pkcs1v15Encrypt, &enc_data).expect("Failed to decrypt");
     println!("{}", HEXUPPER.encode(&dec_data));
+    let dec = String::from_utf8(dec_data);
+    println!("{:?}", dec);
 
 }
