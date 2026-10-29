@@ -1,7 +1,5 @@
 use rsa::{Pkcs1v15Encrypt, RsaPrivateKey, RsaPublicKey};
-use rand::Rng;
 use data_encoding::HEXUPPER;
-#[warn(unused_imports)]
 fn main() {
     let mut rng = rand::thread_rng();
     let bits = 2048;

@@ -1,0 +1,23 @@
+# Rust build output
+target/
+
+# macOS
+.DS_Store
+
+# ZoKrates artifacts (proving/verification keys, proofs, witnesses)
+crypto/zokrates/build/
+
+# Secrets and key material: never commit
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.sk
+
+# Upstream clone; fetch separately (see gen/README or rust-lang/rust-by-example)
+gen/rust-by-example/
+
+# Local Claude Code settings
+.claude/settings.local.json
