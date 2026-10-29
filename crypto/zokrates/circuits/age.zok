@@ -1,0 +1,5 @@
+// Range proof: prove a private age is >= a public threshold without revealing it.
+def main(private u32 age, u32 min_age) {
+    assert(age >= min_age);
+    return;
+}

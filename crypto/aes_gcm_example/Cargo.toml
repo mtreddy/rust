@@ -1,0 +1,8 @@
+[package]
+name = "aes_gcm_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes-gcm = "0.10"
+hex = "0.4"

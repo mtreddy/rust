@@ -1,0 +1,8 @@
+[package]
+name = "tinyros"
+version = "0.1.0"
+edition = "2021"
+
+# A tiny version of ROS2, built with nothing but the standard library.
+
+[dependencies]

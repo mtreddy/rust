@@ -1,0 +1,21 @@
+[package]
+name = "nizk_examples"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+ark-bn254 = "0.5"
+ark-ec = "0.5"
+ark-ff = "0.5"
+ark-groth16 = "0.5"
+ark-r1cs-std = "0.5"
+ark-relations = "0.5"
+ark-serialize = "0.5"
+ark-snark = "0.5"
+bulletproofs = "5"
+curve25519-dalek = { version = "4", features = ["rand_core"] }
+hex = "0.4"
+merlin = "3"
+rand = "0.8"
+sha2 = "0.10"
+winterfell = "0.13.1"

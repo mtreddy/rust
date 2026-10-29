@@ -1,0 +1,7 @@
+// Safer version: constraints only hold for a correct (x, y),
+// so no proof can be generated for a wrong answer at all.
+// Public: a, b, c, y. Private: x.
+def main(field a, field b, field c, private field x, field y) {
+    assert(a * x**2 + b * x + c == y);
+    return;
+}

@@ -1,0 +1,7 @@
+// Helper: compute sha256 of a 512-bit preimage packed as 4 x 128-bit fields.
+// Run with compute-witness only; the output is the hash for preimage.zok.
+import "hashes/sha256/512bitPacked" as sha256packed;
+
+def main(private field a, private field b, private field c, private field d) -> field[2] {
+    return sha256packed([a, b, c, d]);
+}

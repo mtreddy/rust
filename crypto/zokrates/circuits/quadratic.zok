@@ -1,0 +1,8 @@
+// Port of the asecuritysite example to ZoKrates 0.8 syntax.
+// y = a*x^2 + b*x + c. Public: a, b, c. Private: x, y. Returns whether y matches.
+// NOTE: a proof is still valid when the result is false, so the verifier must
+// also check the public output (the last public input) equals 1.
+def main(field a, field b, field c, private field x, private field y) -> bool {
+    field y1 = a * x**2 + b * x + c;
+    return y == y1;
+}

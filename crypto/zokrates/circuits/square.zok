@@ -1,0 +1,5 @@
+// Prove knowledge of x such that x * x == y, without revealing x.
+def main(private field x, field y) {
+    assert(x * x == y);
+    return;
+}

@@ -1,0 +1,9 @@
+[package]
+name = "aes_modes"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aes = "0.8"
+hex = "0.4"
+rand = "0.8"
